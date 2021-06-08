@@ -4,53 +4,23 @@ public class CriaConta {
 
 	public static void main(String[] args) {
 
+		Cliente primeiroCliente = new Cliente();
+		
+		primeiroCliente.nome = "Cesar Araujo";
+		primeiroCliente.cpf = "222.222.222-22";
+		primeiroCliente.profissao = "Programador";
+		
 		Conta primeiraConta = new Conta();
-
-		primeiraConta.saldo = 200;
-		primeiraConta.agencia = 210;
-		primeiraConta.numero = 234;
-		primeiraConta.titular = "Araujo";
-
-		System.out.println("Saldo: " + primeiraConta.saldo);
-		System.out.println("Agência: " + primeiraConta.agencia);
-		System.out.println("Número: " + primeiraConta.numero);
-		System.out.println("Títular: " + primeiraConta.titular);
-
-		primeiraConta.deposita(200);
-
-		System.out.println("Saldo: " + primeiraConta.saldo);
-
-		primeiraConta.sacar(50);
-
-		System.out.println("Saldo: " + primeiraConta.saldo);
-
-		primeiraConta.sacar(350);
-
-		System.out.println("Saldo: " + primeiraConta.saldo);
-
-		primeiraConta.sacar(50);
-
-		System.out.println(primeiraConta.statusOperaccao(primeiraConta.sacar(50)));
-		System.out.println("Saldo: " + primeiraConta.saldo);
-
-		Conta segundaConta = new Conta();
-
-		segundaConta.saldo = 1200;
-		segundaConta.agencia = 220;
-		segundaConta.numero = 244;
-		segundaConta.titular = "Maria";
+		primeiraConta.saldo = 2000;
+		primeiraConta.agencia = 222;
+		primeiraConta.numero = 123;
+		primeiraConta.titular = primeiroCliente;
 		
-		System.out.println();
-		System.out.println("Saldo: " + segundaConta.saldo);
-		System.out.println("Agência: " + segundaConta.agencia);
-		System.out.println("Número: " + segundaConta.numero);
-		System.out.println("Títular: " + segundaConta.titular);
+		System.out.println(primeiraConta.titular.nome);
+		System.out.println(primeiraConta.titular.cpf);
+		System.out.println(primeiraConta.titular.profissao);
 		
-		segundaConta.transfere(300, primeiraConta);
-		System.out.println();
-		System.out.println("Saldo: " + segundaConta.saldo);
-		System.out.println();
-		System.out.println("Saldo: " + primeiraConta.saldo);
+		
 	}
 
 }
