@@ -4,23 +4,26 @@ public class CriaConta {
 
 	public static void main(String[] args) {
 
-		Cliente primeiroCliente = new Cliente();
+		Cliente cliente1 = new Cliente();
 		
-		primeiroCliente.nome = "Cesar Araujo";
-		primeiroCliente.cpf = "222.222.222-22";
-		primeiroCliente.profissao = "Programador";
+		cliente1.setNome("André Araujo");
+		cliente1.setCpf("222.222.222-22");
+		cliente1.setProfissao("Programador");
 		
-		Conta primeiraConta = new Conta();
-		primeiraConta.saldo = 2000;
-		primeiraConta.agencia = 222;
-		primeiraConta.numero = 123;
-		primeiraConta.titular = primeiroCliente;
+		Conta conta1 = new Conta();
 		
-		System.out.println(primeiraConta.titular.nome);
-		System.out.println(primeiraConta.titular.cpf);
-		System.out.println(primeiraConta.titular.profissao);
+		conta1.setTitular(cliente1);
+		
+		System.out.println(conta1.getTitular().getNome());
+		System.out.println(conta1.getTitular().getCpf());
+		System.out.println(conta1.getTitular().getProfissao());
 		
 		
+		conta1.getTitular().setProfissao("Manicure");
+		
+		System.out.println(conta1.getTitular().getNome());
+		System.out.println(conta1.getTitular().getCpf());
+		System.out.println(conta1.getTitular().getProfissao());
 	}
 
 }
