@@ -1,5 +1,5 @@
-
-public class Funcionario {
+//naõ pode mais criar  objetos dessa classe
+public abstract class Funcionario {
 
 	private String nome;
 	private String cpf;
@@ -11,9 +11,8 @@ public class Funcionario {
 		
 	}
 
-	public double getBonificacao() {
-		return this.salario * 0.05;
-	}
+	//metdo sem corpo, não há uma implementação
+	public abstract double getBonificacao();
 	
 	public String getNome() {
 		return nome;
