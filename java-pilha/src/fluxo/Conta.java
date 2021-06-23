@@ -1,18 +1,20 @@
-package exception;
+package fluxo;
 
-public class ExceptionClass {
+public class Conta {
 
 	public static void main(String[] args) {
 
 		System.out.println("Estamos aqui.");
 		for (int i = 0; i < 5; i++) {
-			System.out.println(i);
+			
 			try {
-				
+				System.out.println(i);
 				int a = i / 0;
 				
 			} catch (ArithmeticException ex) {
-				System.out.println("ArithmeticException");
+//				String msg = ex.getMessage();
+//				System.out.println("ArithmeticException" + msg);
+				ex.getCause();
 			}
 		}
 
