@@ -1,17 +1,12 @@
-//naõ pode mais criar  objetos dessa classe
-public abstract class Funcionario {
 
+//nao pode instanciar dessa classe, pq Ã© abstrata
+public abstract class Funcionario {
+	
 	private String nome;
 	private String cpf;
-	protected double salario;
+	private double salario;
 	
-	
-	
-	public Funcionario() {
-		
-	}
-
-	//metdo sem corpo, não há uma implementação
+	//metodo sem corpo, nao hÃ¡ implementacao
 	public abstract double getBonificacao();
 	
 	public String getNome() {
@@ -32,4 +27,8 @@ public abstract class Funcionario {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
+	
+	
+	
+
 }
