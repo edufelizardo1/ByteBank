@@ -1,7 +1,8 @@
 package com.java.io.teste;
 
 import java.io.IOException;
-import java.io.PrintStream;
+//import java.io.PrintStream;
+import java.io.PrintWriter;
 
 public class TesteEscrita3 {
 
@@ -14,7 +15,8 @@ public class TesteEscrita3 {
 //		Writer osw = new OutputStreamWriter(fos);
 //		BufferedWriter bw = new BufferedWriter(osw);
 		
-		PrintStream ps = new PrintStream("lorem2.txt");
+//		PrintStream ps = new PrintStream("lorem2.txt");
+		PrintWriter ps = new PrintWriter("lorem2.txt");
 		
 		ps.println("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ");
 		ps.println();
