@@ -31,6 +31,8 @@ public class TesteLeitura2 {
 			
 //			String[] valores = linha.split(",");
 //			System.out.println(Arrays.toString(valores));
+			
+			linhaScanner.close();
 		}
 		
 		scanner.close();
