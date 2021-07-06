@@ -1,6 +1,5 @@
 package br.com.estudos;
 
-import java.util.Collection;
 
 public class Aula implements Comparable<Aula>{
 	
